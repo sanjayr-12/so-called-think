@@ -68,7 +68,7 @@ async function generateFinal(prompt, arr) {
     const utilText =
       "the above is the question, below are the answers array, iterate the array if answers and analyse all the answers, and finally generate an correct code for the question";
     const result = await model.generateContent(
-      prompt + " " + utilText + " " + arr
+      prompt + "\n" + utilText + "\n" + arr
     );
     // console.log("final array size" + arr.length);
     return result.response.text();

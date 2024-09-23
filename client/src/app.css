@@ -25,7 +25,7 @@
 .send-btn {
   margin-left: 10px;
   padding: 10px 20px;
-  background-color: #1a73e8;
+  background-color: #39e81a;
   color: white;
   border: none;
   border-radius: 8px;
@@ -37,7 +37,7 @@
 }
 
 .send-btn:hover {
-  background-color: #155ab6;
+  background-color: #099d11;
 }
 
 .chat-output {
