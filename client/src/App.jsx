@@ -9,7 +9,6 @@ const App = () => {
   const [err, setErr] = useState("")
   const [errState, setErrState] = useState(false)
   const API_URL = import.meta.env.VITE_API_URL;
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);

@@ -5,7 +5,7 @@ const cors = require("cors");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 app.use(express.json());
 env.config();
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 const genAi = new GoogleGenerativeAI(process.env.API_KEY);
 const model = genAi.getGenerativeModel({ model: "gemini-1.5-flash" });
